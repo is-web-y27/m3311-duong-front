@@ -1,0 +1,59 @@
+ <!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phản hồi - ROYAL TRAVEL</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="responsive.css" />
+  <script src="script.js" defer></script>
+  <script src="feedback.js" defer></script>
+</head>
+<body class="layout">
+  <header class="header">
+    <div class="header__container">
+      <div class="header__logo">
+        <img src="images/logo.jpg" alt="ROYAL TRAVEL Logo" />
+      </div>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html">Trang chủ</a></li>
+          <li class="nav__item"><a href="about.html">Giới thiệu</a></li>
+          <li class="nav__item"><a href="tours.html">Tour du lịch</a></li>
+          <li class="nav__item"><a href="contact.html">Liên hệ</a></li>
+          <li class="nav__item"><a href="feedback.html">Phản hồi</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="section">
+      <h1 class="section__title">Gửi phản hồi</h1>
+      <form id="feedback-form">
+        <label>Họ tên: <input type="text" name="name" required /></label><br />
+        <label>Email: <input type="email" name="email" required /></label><br />
+        <label>Ý kiến: <textarea name="comment" required></textarea></label><br />
+        <button type="submit">Gửi</button>
+      </form>
+    </section>
+
+    <section class="section">
+      <h2 class="section__title">Danh sách phản hồi</h2>
+      <ul id="feedback-list"></ul>
+
+      <template id="feedback-template">
+        <li class="feedback__item">
+          <p><strong class="name"></strong> (<span class="email"></span>)</p>
+          <p class="comment"></p>
+          <button class="edit-btn">Sửa</button>
+        </li>
+      </template>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 ROYAL TRAVEL. All rights reserved.</p>
+  </footer>
+</body>
+</html>
