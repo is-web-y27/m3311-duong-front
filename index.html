@@ -4,52 +4,63 @@
 <head>
     <meta charset="UTF-8">
     <title>ROYAL TRAVEL - Du lịch Nga</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <h1>Chào mừng đến với ROYAL TRAVEL</h1>
-    <p>Chúng tôi cung cấp các tour du lịch đến Nga với giá cả phải chăng và dịch vụ tốt nhất.</p>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Trang chủ</a></li>
-                <li><a href="about.html">Giới thiệu</a></li>
-                <li><a href="tours.html">Tour du lịch</a></li>
-                <li><a href="contact.html">Liên hệ</a></li>
-        </nav>
+<body class="layout">
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <img src="images/logo.jpg" alt="ROYAL TRAVEL Logo">
+            </div>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html">Trang chủ</a></li>
+                    <li class="nav__item"><a href="about.html">Giới thiệu</a></li>
+                    <li class="nav__item"><a href="tours.html">Tour du lịch</a></li>
+                    <li class="nav__item"><a href="contact.html">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section>
-            <h1> Saint Petersburg - Mùa thu vàng lãng mạn</h1>
-            <p><strong>Khám phá vẻ đẹp của Saint Petersburg trong mùa thu với những chiếc lá vàng rực rỡ</strong> cùng <em>ROYAL TRAVEL</em>.</p>
+    <main class="main">
+        <section class="section">
+            <h1 class="tour__title"> Saint Petersburg - Mùa thu vàng lãng mạn</h1>
+            <p class="tour__title"><strong>Khám phá vẻ đẹp của Saint Petersburg trong mùa thu với những chiếc lá vàng
+                    rực rỡ</strong> cùng <em>ROYAL TRAVEL</em>.</p>
             <img src="images/SaintPetersburg_Autumn_0.jpg" alt="Saint Petersburg - Mùa thu vàng lãng mạn">
         </section>
 
-        <section>
-            <h2> Tour nổi bật</h2>
-            <article>
-                <img src="images/SaintPetersburg_0.jpg" alt="Tour khám phá Saint Petersburg">
-                <h3>Tour khám phá Saint Petersburg</h3>
-                <p>Tham gia tour khám phá thành phố với những điểm đến nổi bật như Nhà thờ St. Isaac, Cung điện Mùa đông
-                    và nhiều hơn nữa.</p>
-                <cite>ROYAL TRAVEL - Đem đến trải nghiệm du lịch tuyệt vời nhất.</cite>
-                <pre><code>#ROYAL-01-VN-RU</code></pre>
-            </article>
+        <section class="section">
+            <h2 class="tour__title"> Tour nổi bật</h2>
+            <div class="tour__card">
+                <article>
+                    <h3 class="tour__title">Tour khám phá Saint Petersburg</h3>
+                    <img src="images/SaintPetersburg_0.jpg" alt="Tour khám phá Saint Petersburg">
+                    <p class="tour__desc">Tham gia tour khám phá thành phố với những điểm đến nổi bật như Nhà thờ St.
+                        Isaac, Cung điện Mùa đông
+                        và nhiều hơn nữa.</p>
+                    <cite>ROYAL TRAVEL - Đem đến trải nghiệm du lịch tuyệt vời nhất.</cite>
+                    <pre><code>#ROYAL-01-VN-RU</code></pre>
+                </article>
 
-            <article>
-                <img src="images/Moscow_0.jpg" alt="Tour khám phá Moscow">
-                <h3>Tour khám phá Moscow</h3>
-                <p>Khám phá vẻ đẹp của Moscow với những công trình kiến trúc độc đáo như Quảng trường Đỏ, Điện Kremlin
-                    và nhiều hơn nữa.
-                </p>
-                <cite>ROYAL TRAVEL - Đem đến trải nghiệm du lịch tuyệt vời nhất.</cite>
-                <pre><code>#ROYAL-02-VN-RU</code></pre>
-            </article>
+
+                <article>
+                    <h3 class="tour__title">Tour khám phá Moscow</h3>
+                    <img src="images/Moscow_0.jpg" alt="Tour khám phá Moscow">
+                    <p class="tour__desc">Khám phá vẻ đẹp của Moscow với những công trình kiến trúc độc đáo như Quảng
+                        trường Đỏ, Điện Kremlin
+                        và nhiều hơn nữa.
+                    </p>
+                    <cite>ROYAL TRAVEL - Đem đến trải nghiệm du lịch tuyệt vời nhất.</cite>
+                    <pre><code>#ROYAL-02-VN-RU</code></pre>
+                </article>
+            </div>
 
         </section>
 
-        <aside>
+        <aside class="aside">
             <h4>Lưu ý</h4>
             <ul>
                 <li><ins>Tour có thể thay đổi lịch trình tùy vào điều kiện thời tiết.</ins></li>
@@ -59,7 +70,7 @@
         </aside>
     </main>
 
-    <footer>
+    <footer class="footer">
         <p>&copy; 2025 ROYAL TRAVEL. All rights reserved.</p>
     </footer>
 
