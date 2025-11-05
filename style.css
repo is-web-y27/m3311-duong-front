@@ -218,10 +218,7 @@ blockquote {
     margin: 10px 0;
     padding-left: 10px;
     border-left: 2px solid #ccc;
-}
-
-
-/* cho feedback*/ 
+}/* cho feedback*/ 
 .feedback__item {
   background-color: #e0f7fa;
   border: 1px solid #ccc;
@@ -244,5 +241,6 @@ blockquote {
   background-color: #005f47;
 }
 
+/* cho form*/
 input {  width: 100%;  padding: 12px 20px;  margin: 8px 0;  box-sizing: border-box;}
-textarea {  width: 100%;  height: 150px;  padding: 12px 20px;  box-sizing: border-box;  margin: 8px 0;  resize: vertical;}
+textarea {  width: 100%;  padding: 12px 20px;  box-sizing: border-box;  margin: 8px 0;  resize: vertical;}
