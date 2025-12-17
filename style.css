@@ -6,10 +6,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif
-    /*font-size: 16px;*/
-    font-size: 1rem; /*gốc*/
-    background-color: #fdfdfd;
-    color: #3336;
+
 }
 
 /*- Đảm bảo toàn bộ trang chiếm đủ chiều cao màn hình
@@ -26,7 +23,7 @@ html, body {
 .layout {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100vh;  /* Chiếm toàn bộ viewport */
 }
 
 
@@ -122,18 +119,23 @@ html, body {
 }
 
 /* Tour cards */
-.tour__card {
-  margin-bottom: 2em;
-  padding: 1em;
-  border: 1px solid #ddd;
-  background-color: #fff;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+.tour__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
 }
 
-.tour__card img {
+.tour__card {
+  background: #ffffff;
+  padding: 1.5em;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.tour__img {
   width: 100%;
-  max-width: 400px;
-  display: block;
+  height: auto;
+  border-radius: 6px;
   margin-bottom: 1em;
 }
 

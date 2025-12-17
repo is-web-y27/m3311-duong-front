@@ -1,26 +1,28 @@
 /* Tablet: max-width 1024px */
 @media (max-width: 1024px) {
   .tour__grid {
-    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* hai cột */
+    gap: 2em
   }
 }
 
 /* Mobile: max-width 768px */
 @media (max-width: 768px) {
   .header--flex {
-    flex-direction: column;
+    flex-direction: column; 
     align-items: center;
     gap: 1em;
   }
 
   .nav__list {
-    flex-direction: column;
+    flex-direction: column; 
     align-items: center;
     gap: 1em;
   }
 
   .tour__grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr;  /* một cột trên mobile */
   }
 
   .footer {
@@ -28,4 +30,18 @@
     padding: 2em 1em;
   }
 }
+
+ .header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  @media (max-width: 768px) {
+  .aside {
+    display: none;
+  }
+}
+
+
 
