@@ -5,11 +5,11 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif
     /*font-size: 16px;*/
     font-size: 1rem; /*gốc*/
     background-color: #fdfdfd;
-    color: #333;
+    color: #3336;
 }
 
 /*- Đảm bảo toàn bộ trang chiếm đủ chiều cao màn hình
@@ -246,3 +246,58 @@ blockquote {
 
 input {  width: 100%;  padding: 12px 20px;  margin: 8px 0;  box-sizing: border-box;}
 textarea {  width: 100%;  height: 150px;  padding: 12px 20px;  box-sizing: border-box;  margin: 8px 0;  resize: vertical;}
+
+
+/* Preloader */
+.preloader {
+    text-align: center;
+    padding: 2em;
+}
+
+.spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #007b60;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 1em;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Phản hồi từ API */
+.feedback__item.api-item {
+    background-color: #f8f9fa;
+    border-left: 4px solid #007b60;
+    margin-bottom: 1em;
+}
+
+.feedback__item.api-item .api-body {
+    font-style: italic;
+    color: #555;
+}
+
+.feedback__item.api-item .api-post-id {
+    color: #888;
+    font-size: 0.9em;
+}
+
+/* Nút */
+.btn {
+    background-color: #007b60;
+    color: white;
+    border: none;
+    padding: 0.75em 1.5em;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #005f47;
+}
