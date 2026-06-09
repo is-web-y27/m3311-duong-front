@@ -1,6 +1,9 @@
+// IIFE - Immediately Invoked Function Expression
 (function () {
+  // 1. ĐO THỜI GIAN TẢI TRANG
   window.addEventListener("load", function () {
     const loadTime = performance.now().toFixed(2);
+      // Hiển thị trong footer
     const footer = document.querySelector(".footer");
     if (footer) {
       const info = document.createElement("p");
@@ -14,7 +17,8 @@
     const menuLinks = document.querySelectorAll(".nav__item a");
 
     menuLinks.forEach(link => {
-      const linkPath = new URL(link.href).pathname;
+      // So sánh đường dẫn để tìm trang hiện tại
+      const linkPath = new URL(link.href).pathname; // Thêm class active
       if (linkPath === currentPath) {
         link.classList.add("active");
       }

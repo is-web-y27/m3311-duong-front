@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="responsive.css" />
   <script src="script.js" defer></script>
   <script src="feedback.js" defer></script>
+  <script src="api-feedback.js" defer></script>
 </head>
 <body class="layout">
   <header class="header">
@@ -50,6 +51,41 @@
         </li>
       </template>
     </section>
+
+    <!-- ĐẶT SAPHẦN FORM HIỆN TẠI -->
+<section class="section">
+    <h2 class="section__title">Đánh giá từ Khách Hàng (Mẫu)</h2>
+    
+    <!-- Preloader (ẩn ban đầu) -->
+    <div id="api-preloader" class="preloader" style="display: none;">
+        <div class="spinner"></div>
+        <p>Đang tải đánh giá...</p>
+    </div>
+    
+    <!-- Thông báo lỗi (ẩn ban đầu) -->
+    <div id="api-error" class="error-message" style="display: none; color: #d32f2f; padding: 1em; background: #ffebee; border-radius: 5px;">
+        <!-- Nội dung lỗi sẽ được thêm bằng JS -->
+    </div>
+    
+    <!-- Danh sách đánh giá từ API -->
+    <div id="api-feedback-list" class="feedback-list">
+        <!-- Dữ liệu từ API sẽ được thêm vào đây -->
+    </div>
+    
+    <!-- Nút tải lại dữ liệu (tuỳ chọn) -->
+    <button id="reload-api-btn" class="btn" style="margin-top: 1em;">Tải thêm đánh giá mẫu</button>
+</section>
+
+<!-- THÊM TEMPLATE MỚI CHO API -->
+<template id="api-feedback-template">
+    <div class="feedback__item api-item">
+        <p><strong class="api-name"></strong> 
+           (<span class="api-email"></span>)</p>
+        <p class="api-body"></p>
+        <small class="api-post-id">Mã bài viết: <span></span></small>
+    </div>
+</template>
+
   </main>
 
   <footer class="footer">

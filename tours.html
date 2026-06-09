@@ -1,104 +1,112 @@
 <!DOCTYPE html>
 <html lang="vi">
-    <> 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Tour nổi bật - ROYAL TRAVEL</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="responsive.css">
-        <script src="script.js" defer></script>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour nổi bật - ROYAL TRAVEL</title>
 
-    <body class="layout">
-    <header class="header">
-        <div class="header__container">
-            <div class="header__logo">
-                <img src="images/logo.jpg" alt="ROYAL TRAVEL Logo">
-            </div>
-            <nav>
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="index.html">Trang chủ</a></li>
-                    <li class="nav__item"><a href="about.html">Giới thiệu</a></li>
-                    <li class="nav__item"><a href="tours.html">Tour du lịch</a></li>
-                    <li class="nav__item"><a href="contact.html">Liên hệ</a></li>
-                    <li class="nav__item"><a href="feedback.html">Phản hồi</a></li>
-                </ul>
-            </nav>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body class="layout">
+
+<header class="header">
+    <div class="header__container">
+        <div class="header__logo">
+            <img src="images/logo.jpg" alt="ROYAL TRAVEL Logo">
         </div>
-        </header>
+        <nav>
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html">Trang chủ</a></li>
+                <li class="nav__item"><a href="about.html">Giới thiệu</a></li>
+                <li class="nav__item"><a href="tours.html">Tour du lịch</a></li>
+                <li class="nav__item"><a href="contact.html">Liên hệ</a></li>
+                <li class="nav__item"><a href="feedback.html">Phản hồi</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
-        <main class="main">
-            <section class="section">
-                <h1 class="tour__title"> Tour nổi bật </h1>
-                <blockquote class="blockquote">Khám phá những tour du lịch hấp dẫn nhất cùng ROYAL TRAVEL!</blockquote>
-                
-                <div class="tour__card">
-                <article>
-                       <h2 class="tour__title">Tour khám phá Saint Petersburg</h2>
-                       <img class="tour__card img" src="images/SaintPetersburg_0.jpg" alt="Tour khám phá Saint Petersburg">
-                <p class="tour__desc">Tham gia tour khám phá thành phố với những điểm đến nổi bật như Nhà thờ St. Isaac, Cung điện Mùa đông
-                    và nhiều hơn nữa.</p>
-                <cite>ROYAL TRAVEL - Đem đến trải nghiệm du lịch tuyệt vời nhất.</cite>
-                <pre><code>#ROYAL-01-VN-RU</code></pre>
-            </article>
-        
-            
-            <article>
-                <h2 class="tour__title">Tour khám phá Moscow</h2>
-                <img class="tour__card img" src="images/Moscow_0.jpg" alt="Tour khám phá Moscow">
-                <p class="tour__desc">Khám phá vẻ đẹp của Moscow với những công trình kiến trúc độc đáo như Quảng trường Đỏ, Điện Kremlin
-                    và nhiều hơn nữa.
-                </p>
-                <cite>ROYAL TRAVEL - Đem đến trải nghiệm du lịch tuyệt vời nhất.</cite>
-                <pre><code>#ROYAL-02-VN-RU</code></pre>
-            </article>
+<main class="main">
+<section class="section">
 
-            <article>
-                <h2 class="tour__title">Tour khám phá Kazan</h2>
-                <img class="tour__card img" src="images/Kazan_0.jpg" alt="Tour khám phá Kazan">
-                <p class="tour__desc">Khám phá vẻ đẹp của Kazan với những công trình kiến trúc độc đáo như Nhà thờ Chính tòa Kazan, Pháo
-                    đài Kazan và nhiều hơn nữa.</p>
-                <cite>ROYAL TRAVEL - Đem đến trải nghiệm du lịch tuyệt vời nhất.</cite>
-                <pre><code>#ROYAL-03-VN-RU</code></pre>
-            </article>
+    <h1 class="tour__title">Tour nổi bật</h1>
+    <blockquote class="blockquote">
+        Khám phá những tour du lịch hấp dẫn nhất cùng ROYAL TRAVEL!
+    </blockquote>
 
-            <article>
-                <h2 class="tour__title">Tour khám phá Sochi</h2>
-                <img class="tour__card img" src="images/Sochi_0.jpg" alt="Tour khám phá Sochi">
-                <p class="tour__desc">Khám phá vẻ đẹp của Sochi với những bãi biển tuyệt đẹp, dãy núi Caucasus hùng vĩ và nhiều hoạt động giải trí thú vị.</p>
-                <cite>ROYAL TRAVEL - Đem đến trải nghiệm du lịch tuyệt vời nhất.</cite>
-                <pre><code>#ROYAL-04-VN-RU</code></pre>
-            </article>
+    <!-- GRID CONTAINER -->
+    <div class="tour__grid">
 
-            <article>
-                <h2 class="tour__title">Tour khám phá Vladivostok</h2>
-                <img class="tour__card img" src="images/Vladivostok_0.jpg" alt="Tour khám phá Vladivostok">
-                <p class="tour__desc">Khám phá vẻ đẹp của Vladivostok với những bãi biển tuyệt đẹp, kiến trúc độc đáo và nhiều hoạt động giải trí thú vị.</p>
-                <cite>ROYAL TRAVEL - Đem đến trải nghiệm du lịch tuyệt vời nhất.</cite>
-                <pre><code>#ROYAL-05-VN-RU</code></pre>
-            </article>
+        <article class="tour__card">
+            <h2>Tour khám phá Saint Petersburg</h2>
+            <img class="tour__img" src="images/SaintPetersburg_0.jpg" alt="Saint Petersburg">
+            <p class="tour__desc">
+                Tham gia tour khám phá thành phố với những điểm đến nổi bật như Nhà thờ St. Isaac, Cung điện Mùa đông...
+            </p>
+            <cite>ROYAL TRAVEL – Đem đến trải nghiệm du lịch tuyệt vời nhất.</cite>
+            <pre><code>#ROYAL-01-VN-RU</code></pre>
+        </article>
 
-            <article>    
-                <h2 class="tour__title"> Tour khám phá Murmansk</h2>
-                <img class="tour__card img" src="images/Murmansk_0.jpg" alt="Tour khám phá Murmansk">
-                <p class="tour__desc">Khám phá vẻ đẹp của Murmansk với những cảnh quan thiên nhiên tuyệt đẹp và văn hóa độc đáo của vùng Bắc Cực.</p>
-                <cite>ROYAL TRAVEL - Đem đến trải nghiệm du lịch tuyệt vời nhất.</cite>
-                <pre><code>#ROYAL-06-VN-RU</code></pre>
-            </article>    
-            
-            <article>
-                <h2 class="tour__title"> Tour khám phá Kaliningrad</h2>
-                <img class="tour__card img" src="images/Kaliningrad_0.jpg" alt="Tour khám phá Kaliningrad">
-                <p class="tour__desc">Khám phá vẻ đẹp của Kaliningrad với những bãi biển tuyệt đẹp, kiến trúc độc đáo và nhiều hoạt động giải trí thú vị.</p>
-                <cite>ROYAL TRAVEL - Đem đến trải nghiệm du lịch tuyệt vời nhất.</cite>
-                <pre><code>#ROYAL-07-VN-RU</code></pre>
-            </article>
-            </div>
-        </section>
-        </main>
+        <article class="tour__card">
+            <h2>Tour khám phá Moscow</h2>
+            <img class="tour__img" src="images/Moscow_0.jpg" alt="Moscow">
+            <p class="tour__desc">
+                Khám phá vẻ đẹp của Moscow với Quảng trường Đỏ, Điện Kremlin...
+            </p>
+            <cite>ROYAL TRAVEL – Đem đến trải nghiệm du lịch tuyệt vời nhất.</cite>
+            <pre><code>#ROYAL-02-VN-RU</code></pre>
+        </article>
 
-        <footer class="footer">
-            <p>&copy; 2025 ROYAL TRAVEL. All rights reserved.</p>
-        </footer>
-    </body>
+        <article class="tour__card">
+            <h2>Tour khám phá Kazan</h2>
+            <img class="tour__img" src="images/Kazan_0.jpg" alt="Kazan">
+            <p class="tour__desc">
+                Khám phá vẻ đẹp của Kazan với Nhà thờ Chính tòa Kazan, Pháo đài Kazan...
+            </p>
+            <cite>ROYAL TRAVEL – Đem đến trải nghiệm du lịch tuyệt vời nhất.</cite>
+            <pre><code>#ROYAL-03-VN-RU</code></pre>
+        </article>
+
+        <article class="tour__card">
+            <h2>Tour khám phá Sochi</h2>
+            <img class="tour__img" src="images/Sochi_0.jpg" alt="Sochi">
+            <p class="tour__desc">
+                Sochi nổi tiếng với bãi biển đẹp và dãy núi Caucasus hùng vĩ.
+            </p>
+            <cite>ROYAL TRAVEL – Đem đến trải nghiệm du lịch tuyệt vời nhất.</cite>
+            <pre><code>#ROYAL-04-VN-RU</code></pre>
+        </article>
+
+        <article class="tour__card">
+            <h2>Tour khám phá Vladivostok</h2>
+            <img class="tour__img" src="images/Vladivostok_0.jpg" alt="Vladivostok">
+            <p class="tour__desc">
+                Thành phố cảng với kiến trúc độc đáo và thiên nhiên tuyệt đẹp.
+            </p>
+            <cite>ROYAL TRAVEL – Đem đến trải nghiệm du lịch tuyệt vời nhất.</cite>
+            <pre><code>#ROYAL-05-VN-RU</code></pre>
+        </article>
+
+        <article class="tour__card">
+            <h2>Tour khám phá Murmansk</h2>
+            <img class="tour__img" src="images/Murmansk_0.jpg" alt="Murmansk">
+            <p class="tour__desc">
+                Trải nghiệm thiên nhiên Bắc Cực và hiện tượng cực quang.
+            </p>
+            <cite>ROYAL TRAVEL – Đem đến trải nghiệm du lịch tuyệt vời nhất.</cite>
+            <pre><code>#ROYAL-06-VN-RU</code></pre>
+        </article>
+
+    </div>
+</section>
+</main>
+
+<footer class="footer">
+    <p>&copy; 2025 ROYAL TRAVEL. All rights reserved.</p>
+</footer>
+
+</body>
 </html>
